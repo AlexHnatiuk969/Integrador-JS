@@ -28,7 +28,7 @@
         });
         if(productosLS === InfoProducto.id){
             Swal.fire({
-                icon: 'info',
+                type: 'info',
                 title: 'Oops...',
                 text: 'El producto ya esta agregado!',
                 timer: 1500,
@@ -176,7 +176,7 @@
         e.preventDefault();
         if(this.obtenerProductosLocalStorage().length === 0){
             Swal.fire({
-                icon: 'info',
+                type: 'info',
                 title: 'Oops...',
                 text: 'El carrito esta vacio!, agrega algun producto.',
                 timer: 2500,
